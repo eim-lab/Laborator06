@@ -2,13 +2,13 @@ package ro.pub.cs.systems.eim.lab06.ftpserverwelcomemessage.general;
 
 public interface Constants {
 
-    public final static boolean DEBUG = true;
+    boolean DEBUG = true;
 
-    public final static String TAG = "FTPServerWelcomeMessage";
+    String TAG = "FTPServerWelcomeMessage";
 
-    public final static int FTP_PORT = 21;
-    public final static String FTP_MULTILINE_START_CODE = "220-";
-    public final static String FTP_MULTILINE_END_CODE1 = "220";
-    public final static String FTP_MULTILINE_END_CODE2 = "220 ";
+    int FTP_PORT = 21;
+    String FTP_MULTILINE_START_CODE = "220";
+    String FTP_MULTILINE_END_CODE1 = "220";
+    String FTP_MULTILINE_END_CODE2 = "220 ";
 
 }
