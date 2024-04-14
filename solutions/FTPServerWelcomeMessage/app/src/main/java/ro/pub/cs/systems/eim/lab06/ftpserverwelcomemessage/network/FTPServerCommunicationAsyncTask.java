@@ -24,7 +24,7 @@ public class FTPServerCommunicationAsyncTask extends AsyncTask<String, String, V
         Socket socket = null;
         BufferedReader bufferedReader = null;
         try {
-            socket = new Socket(params[0], Constants.FTP_PORT);
+            socket = new Socket(params[0], Integer.parseInt(params[1]));
             Log.v(Constants.TAG, "Connected to: " + socket.getInetAddress() + ":" + socket.getLocalPort());
             bufferedReader = Utilities.getReader(socket);
             String line = bufferedReader.readLine();

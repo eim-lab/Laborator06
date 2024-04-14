@@ -14,6 +14,7 @@ public class FTPServerWelcomeMessageActivity extends AppCompatActivity {
 
     private final ButtonClickListener buttonClickListener = new ButtonClickListener();
     private EditText FTPServerAddressEditText;
+    private EditText FTPServerPortEditText;
     private TextView welcomeMessageTextView;
 
     @Override
@@ -22,6 +23,7 @@ public class FTPServerWelcomeMessageActivity extends AppCompatActivity {
         setContentView(R.layout.activity_ftpserver_welcome_message);
 
         FTPServerAddressEditText = (EditText) findViewById(R.id.ftp_server_address_edit_text);
+        FTPServerPortEditText = (EditText) findViewById(R.id.port_server_edit_text);
 
         Button displayWelcomeMessageButton = (Button) findViewById(R.id.display_welcome_message_button);
         displayWelcomeMessageButton.setOnClickListener(buttonClickListener);
@@ -34,8 +36,8 @@ public class FTPServerWelcomeMessageActivity extends AppCompatActivity {
         @Override
         public void onClick(View view) {
             FTPServerCommunicationAsyncTask ftpServerCommunicationAsyncTask = new FTPServerCommunicationAsyncTask(welcomeMessageTextView);
-            // For example you can use: ftp.gnu.org in the edit text field
-            ftpServerCommunicationAsyncTask.execute(FTPServerAddressEditText.getText().toString());
+            // For example you can use: ftp.gnu.org as FTP server address and 21 as FTP server port
+            ftpServerCommunicationAsyncTask.execute(FTPServerAddressEditText.getText().toString(), FTPServerPortEditText.getText().toString());
         }
 
     }
