@@ -16,7 +16,7 @@ public class ServerThread extends Thread {
     private boolean isRunning;
 
     private ServerSocket serverSocket;
-    private EditText serverTextEditText;
+    private final EditText serverTextEditText;
 
     public ServerThread(EditText serverEditText) {
         this.serverTextEditText = serverEditText;
@@ -36,9 +36,6 @@ public class ServerThread extends Thread {
             }
         } catch (IOException ioException) {
             Log.e(Constants.TAG, "An exception has occurred: " + ioException.getMessage());
-            if (Constants.DEBUG) {
-                ioException.printStackTrace();
-            }
         }
         Log.v(Constants.TAG, "stopServer() method invoked");
     }
@@ -54,9 +51,6 @@ public class ServerThread extends Thread {
                     Thread.sleep(3000);
                 } catch (InterruptedException interruptedException) {
                     Log.e(Constants.TAG, "An exception has occurred: " + interruptedException.getMessage());
-                    if (Constants.DEBUG) {
-                        interruptedException.printStackTrace();
-                    }
                 }
                 PrintWriter printWriter = Utilities.getWriter(socket);
                 printWriter.println(serverTextEditText.getText().toString());
@@ -65,9 +59,6 @@ public class ServerThread extends Thread {
             }
         } catch (IOException ioException) {
             Log.e(Constants.TAG, "An exception has occurred: " + ioException.getMessage());
-            if (Constants.DEBUG) {
-                ioException.printStackTrace();
-            }
         }
     }
 }

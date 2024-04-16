@@ -17,7 +17,7 @@ public class SingleThreadedServerActivity extends AppCompatActivity {
 
     private ServerThread serverThread;
 
-    private ServerTextContentWatcher serverTextContentWatcher = new ServerTextContentWatcher();
+    private final ServerTextContentWatcher serverTextContentWatcher = new ServerTextContentWatcher();
     private class ServerTextContentWatcher implements TextWatcher {
 
         @Override
