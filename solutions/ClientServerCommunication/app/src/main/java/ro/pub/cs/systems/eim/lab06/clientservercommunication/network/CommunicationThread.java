@@ -12,8 +12,8 @@ import ro.pub.cs.systems.eim.lab06.clientservercommunication.general.Utilities;
 
 public class CommunicationThread extends Thread {
 
-    private Socket socket;
-    private EditText serverTextEditText;
+    private final Socket socket;
+    private final EditText serverTextEditText;
 
     public CommunicationThread(Socket socket, EditText serverTextEditText) {
         this.socket = socket;
@@ -30,9 +30,6 @@ public class CommunicationThread extends Thread {
             Log.v(Constants.TAG, "Connection closed");
         } catch (IOException ioException) {
             Log.e(Constants.TAG, "An exception has occurred: " + ioException.getMessage());
-            if (Constants.DEBUG) {
-                ioException.printStackTrace();
-            }
         }
     }
 

@@ -26,9 +26,6 @@ public class ClientAsyncTask extends AsyncTask<String, String, Void> {
             String serverAddress = params[0];
             int serverPort = Integer.parseInt(params[1]);
             socket = new Socket(serverAddress, serverPort);
-            if (socket == null) {
-                return null;
-            }
             Log.v(Constants.TAG, "Connection opened with " + socket.getInetAddress() + ":" + socket.getLocalPort());
             BufferedReader bufferedReader = Utilities.getReader(socket);
             String currentLine;
@@ -37,9 +34,6 @@ public class ClientAsyncTask extends AsyncTask<String, String, Void> {
             }
         } catch (IOException ioException) {
             Log.e(Constants.TAG, "An exception has occurred: " + ioException.getMessage());
-            if (Constants.DEBUG) {
-                ioException.printStackTrace();
-            }
         } finally {
             try {
                 if (socket != null) {
@@ -48,9 +42,6 @@ public class ClientAsyncTask extends AsyncTask<String, String, Void> {
                 Log.v(Constants.TAG, "Connection closed");
             } catch (IOException ioException) {
                 Log.e(Constants.TAG, "An exception has occurred: " + ioException.getMessage());
-                if (Constants.DEBUG) {
-                    ioException.printStackTrace();
-                }
             }
         }
         return null;

@@ -16,7 +16,7 @@ public class ServerThread extends Thread {
 
     private ServerSocket serverSocket;
 
-    private EditText serverTextEditText;
+    private final EditText serverTextEditText;
 
     public ServerThread(EditText serverTextEditText) {
         this.serverTextEditText = serverTextEditText;
@@ -34,9 +34,6 @@ public class ServerThread extends Thread {
             serverSocket.close();
         } catch (IOException ioException) {
             Log.e(Constants.TAG, "An exception has occurred: " + ioException.getMessage());
-            if (Constants.DEBUG) {
-                ioException.printStackTrace();
-            }
         }
         Log.v(Constants.TAG, "stopServer() method was invoked");
     }
@@ -48,16 +45,11 @@ public class ServerThread extends Thread {
             while (isRunning) {
                 Socket socket = serverSocket.accept();
                 Log.v(Constants.TAG, "accept()-ed: " + socket.getInetAddress());
-                if (socket != null) {
-                    CommunicationThread communicationThread = new CommunicationThread(socket, serverTextEditText);
-                    communicationThread.start();
-                }
+                CommunicationThread communicationThread = new CommunicationThread(socket, serverTextEditText);
+                communicationThread.start();
             }
         } catch (IOException ioException) {
             Log.e(Constants.TAG, "An exception has occurred: " + ioException.getMessage());
-            if (Constants.DEBUG) {
-                ioException.printStackTrace();
-            }
         }
     }
 }
