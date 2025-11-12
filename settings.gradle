@@ -39,3 +39,6 @@ include(":kotlinSolutionSingleThreadedServer")
 include(":javaSkelClientServerCommunication")
 include(":javaSkelFTPServerWelcomeMessage")
 include(":javaSkelSingleThreadedServer")
+
+// Kotlin Skeletons (Lab Tasks)
+include(":kotlinSkelClientServerCommunication")
