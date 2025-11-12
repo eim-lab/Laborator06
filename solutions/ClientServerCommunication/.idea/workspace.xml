@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+    <layouts>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_client_server_communication.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_client.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_server.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+    </layouts>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7b57307f-6671-4da6-bad2-155efa22d3f1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../labtasks/ClientServerCommunication/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/ClientServerCommunication/.idea/AndroidProjectSystem.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/ClientServerCommunication/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/ClientServerCommunication/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/ClientServerCommunication/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/ClientServerCommunication/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/ClientServerCommunication/ClientServerCommunication.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/ClientServerCommunication/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/ClientServerCommunication/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/ClientServerCommunication/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/ClientServerCommunication/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/ClientServerCommunication/app/src/main/java/ro/pub/cs/systems/eim/lab06/clientservercommunication/general/Constants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/ClientServerCommunication/app/src/main/java/ro/pub/cs/systems/eim/lab06/clientservercommunication/general/Utilities.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/ClientServerCommunication/app/src/main/java/ro/pub/cs/systems/eim/lab06/clientservercommunication/network/ClientAsyncTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/ClientServerCommunication/app/src/main/java/ro/pub/cs/systems/eim/lab06/clientservercommunication/network/CommunicationThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/ClientServerCommunication/app/src/main/java/ro/pub/cs/systems/eim/lab06/clientservercommunication/network/ServerThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/ClientServerCommunication/app/src/main/java/ro/pub/cs/systems/eim/lab06/clientservercommunication/views/ClientFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/ClientServerCommunication/app/src/main/java/ro/pub/cs/systems/eim/lab06/clientservercommunication/views/ClientServerCommunicationActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/ClientServerCommunication/app/src/main/java/ro/pub/cs/systems/eim/lab06/clientservercommunication/views/ServerFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/ClientServerCommunication/app/src/main/res/drawable/frame_border.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/ClientServerCommunication/app/src/main/res/layout/activity_client_server_communication.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/ClientServerCommunication/app/src/main/res/layout/fragment_client.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/ClientServerCommunication/app/src/main/res/layout/fragment_server.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/ClientServerCommunication/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/ClientServerCommunication/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/ClientServerCommunication/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/ClientServerCommunication/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/ClientServerCommunication/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/ClientServerCommunication/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/ClientServerCommunication/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/ClientServerCommunication/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/ClientServerCommunication/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/ClientServerCommunication/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/ClientServerCommunication/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/ClientServerCommunication/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/ClientServerCommunication/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/ClientServerCommunication/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/ClientServerCommunication/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/ClientServerCommunication/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/ClientServerCommunication/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/ClientServerCommunication/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/ClientServerCommunication/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/ClientServerCommunication/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/FTPServerWelcomeMessage/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/FTPServerWelcomeMessage/FTPServerWelcomeMessage.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/FTPServerWelcomeMessage/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/FTPServerWelcomeMessage/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/FTPServerWelcomeMessage/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/FTPServerWelcomeMessage/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/FTPServerWelcomeMessage/app/src/main/java/ro/pub/cs/systems/eim/lab06/ftpserverwelcomemessage/general/Constants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/FTPServerWelcomeMessage/app/src/main/java/ro/pub/cs/systems/eim/lab06/ftpserverwelcomemessage/general/Utilities.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/FTPServerWelcomeMessage/app/src/main/java/ro/pub/cs/systems/eim/lab06/ftpserverwelcomemessage/network/FTPServerCommunicationAsyncTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/FTPServerWelcomeMessage/app/src/main/java/ro/pub/cs/systems/eim/lab06/ftpserverwelcomemessage/views/FTPServerWelcomeMessageActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/FTPServerWelcomeMessage/app/src/main/res/layout/activity_ftpserver_welcome_message.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/FTPServerWelcomeMessage/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/FTPServerWelcomeMessage/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/FTPServerWelcomeMessage/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/FTPServerWelcomeMessage/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/FTPServerWelcomeMessage/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/FTPServerWelcomeMessage/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/FTPServerWelcomeMessage/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/FTPServerWelcomeMessage/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/FTPServerWelcomeMessage/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/FTPServerWelcomeMessage/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/FTPServerWelcomeMessage/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/FTPServerWelcomeMessage/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/FTPServerWelcomeMessage/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/FTPServerWelcomeMessage/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/FTPServerWelcomeMessage/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/FTPServerWelcomeMessage/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/FTPServerWelcomeMessage/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/FTPServerWelcomeMessage/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/FTPServerWelcomeMessage/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/FTPServerWelcomeMessage/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/SingleThreadedServer/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/SingleThreadedServer/SingleThreadedServer.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/SingleThreadedServer/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/SingleThreadedServer/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/SingleThreadedServer/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/SingleThreadedServer/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/SingleThreadedServer/app/src/main/java/ro/pub/cs/systems/eim/lab06/singlethreadedserver/general/Constants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/SingleThreadedServer/app/src/main/java/ro/pub/cs/systems/eim/lab06/singlethreadedserver/general/Utilities.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/SingleThreadedServer/app/src/main/java/ro/pub/cs/systems/eim/lab06/singlethreadedserver/network/ServerThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/SingleThreadedServer/app/src/main/java/ro/pub/cs/systems/eim/lab06/singlethreadedserver/views/SingleThreadedServerActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/SingleThreadedServer/app/src/main/res/layout/activity_single_threaded_server.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/SingleThreadedServer/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/SingleThreadedServer/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/SingleThreadedServer/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/SingleThreadedServer/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/SingleThreadedServer/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/SingleThreadedServer/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/SingleThreadedServer/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/SingleThreadedServer/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/SingleThreadedServer/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/SingleThreadedServer/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/SingleThreadedServer/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/SingleThreadedServer/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/SingleThreadedServer/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/SingleThreadedServer/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/SingleThreadedServer/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/SingleThreadedServer/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/SingleThreadedServer/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/SingleThreadedServer/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/SingleThreadedServer/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labtasks/SingleThreadedServer/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../samples/DayTimeProtocol/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../samples/DayTimeProtocol/DayTimeProtocol.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../samples/DayTimeProtocol/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../samples/DayTimeProtocol/app/app.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../samples/DayTimeProtocol/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../samples/DayTimeProtocol/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../samples/DayTimeProtocol/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../samples/DayTimeProtocol/app/src/main/java/ro/pub/cs/systems/eim/lab06/daytimeprotocol/general/Constants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../samples/DayTimeProtocol/app/src/main/java/ro/pub/cs/systems/eim/lab06/daytimeprotocol/general/Utilities.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../samples/DayTimeProtocol/app/src/main/java/ro/pub/cs/systems/eim/lab06/daytimeprotocol/network/NISTCommunicationAsyncTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../samples/DayTimeProtocol/app/src/main/java/ro/pub/cs/systems/eim/lab06/daytimeprotocol/views/DayTimeProtocolActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../samples/DayTimeProtocol/app/src/main/res/layout/activity_day_time_protocol.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../samples/DayTimeProtocol/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../samples/DayTimeProtocol/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../samples/DayTimeProtocol/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../samples/DayTimeProtocol/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../samples/DayTimeProtocol/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../samples/DayTimeProtocol/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../samples/DayTimeProtocol/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../samples/DayTimeProtocol/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../samples/DayTimeProtocol/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../samples/DayTimeProtocol/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../samples/DayTimeProtocol/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../samples/DayTimeProtocol/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../samples/DayTimeProtocol/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../samples/DayTimeProtocol/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../samples/DayTimeProtocol/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../samples/DayTimeProtocol/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../samples/DayTimeProtocol/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../samples/DayTimeProtocol/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../samples/DayTimeProtocol/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../samples/DayTimeProtocol/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/ClientServerCommunication/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/ClientServerCommunication/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/ClientServerCommunication/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/ClientServerCommunication/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/ClientServerCommunication/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/ClientServerCommunication/app/src/main/java/ro/pub/cs/systems/eim/lab06/clientservercommunication/general/Constants.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/ClientServerCommunication/app/src/main/java/ro/pub/cs/systems/eim/lab06/clientservercommunication/general/Utilities.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/ClientServerCommunication/app/src/main/java/ro/pub/cs/systems/eim/lab06/clientservercommunication/network/ClientAsyncTask.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/ClientServerCommunication/app/src/main/java/ro/pub/cs/systems/eim/lab06/clientservercommunication/network/CommunicationThread.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/ClientServerCommunication/app/src/main/java/ro/pub/cs/systems/eim/lab06/clientservercommunication/network/ServerThread.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/ClientServerCommunication/app/src/main/java/ro/pub/cs/systems/eim/lab06/clientservercommunication/views/ClientFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/ClientServerCommunication/app/src/main/java/ro/pub/cs/systems/eim/lab06/clientservercommunication/views/ClientServerCommunicationActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/ClientServerCommunication/app/src/main/java/ro/pub/cs/systems/eim/lab06/clientservercommunication/views/ServerFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/ClientServerCommunication/app/src/main/res/drawable/frame_border.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/ClientServerCommunication/app/src/main/res/layout/activity_client_server_communication.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/ClientServerCommunication/app/src/main/res/layout/fragment_client.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/ClientServerCommunication/app/src/main/res/layout/fragment_server.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/ClientServerCommunication/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/ClientServerCommunication/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/ClientServerCommunication/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/ClientServerCommunication/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/ClientServerCommunication/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/ClientServerCommunication/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/ClientServerCommunication/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/ClientServerCommunication/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/ClientServerCommunication/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/ClientServerCommunication/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/ClientServerCommunication/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/ClientServerCommunication/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/ClientServerCommunication/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/ClientServerCommunication/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/ClientServerCommunication/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/ClientServerCommunication/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/ClientServerCommunication/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/ClientServerCommunication/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/ClientServerCommunication/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/ClientServerCommunication/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/FTPServerWelcomeMessage/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/FTPServerWelcomeMessage/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/FTPServerWelcomeMessage/app/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/FTPServerWelcomeMessage/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/FTPServerWelcomeMessage/app/src/androidTest/java/ro/pub/cs/systems/eim/ftpserverwelcomemessage/ExampleInstrumentedTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/FTPServerWelcomeMessage/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/FTPServerWelcomeMessage/app/src/main/java/ro/pub/cs/systems/eim/ftpserverwelcomemessage/MainActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/FTPServerWelcomeMessage/app/src/main/java/ro/pub/cs/systems/eim/ftpserverwelcomemessage/MainViewModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/FTPServerWelcomeMessage/app/src/main/java/ro/pub/cs/systems/eim/ftpserverwelcomemessage/ui/theme/Color.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/FTPServerWelcomeMessage/app/src/main/java/ro/pub/cs/systems/eim/ftpserverwelcomemessage/ui/theme/Theme.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/FTPServerWelcomeMessage/app/src/main/java/ro/pub/cs/systems/eim/ftpserverwelcomemessage/ui/theme/Type.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/FTPServerWelcomeMessage/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/FTPServerWelcomeMessage/app/src/main/res/drawable/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/FTPServerWelcomeMessage/app/src/main/res/mipmap-anydpi/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/FTPServerWelcomeMessage/app/src/main/res/mipmap-anydpi/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/FTPServerWelcomeMessage/app/src/main/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/FTPServerWelcomeMessage/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/FTPServerWelcomeMessage/app/src/main/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/FTPServerWelcomeMessage/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/FTPServerWelcomeMessage/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/FTPServerWelcomeMessage/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/FTPServerWelcomeMessage/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/FTPServerWelcomeMessage/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/FTPServerWelcomeMessage/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/FTPServerWelcomeMessage/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/FTPServerWelcomeMessage/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/FTPServerWelcomeMessage/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/FTPServerWelcomeMessage/app/src/main/res/values/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/FTPServerWelcomeMessage/app/src/main/res/xml/backup_rules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/FTPServerWelcomeMessage/app/src/main/res/xml/data_extraction_rules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/FTPServerWelcomeMessage/app/src/test/java/ro/pub/cs/systems/eim/ftpserverwelcomemessage/ExampleUnitTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/FTPServerWelcomeMessage/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../../solutions-kotlin/FTPServerWelcomeMessage/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/FTPServerWelcomeMessage/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/FTPServerWelcomeMessage/gradle/libs.versions.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/FTPServerWelcomeMessage/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/FTPServerWelcomeMessage/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/FTPServerWelcomeMessage/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/FTPServerWelcomeMessage/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/FTPServerWelcomeMessage/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/SingleThreadedServer/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/SingleThreadedServer/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/SingleThreadedServer/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/SingleThreadedServer/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/SingleThreadedServer/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/SingleThreadedServer/app/src/main/java/ro/pub/cs/systems/eim/lab06/singlethreadedserver/general/Constants.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/SingleThreadedServer/app/src/main/java/ro/pub/cs/systems/eim/lab06/singlethreadedserver/general/Utilities.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/SingleThreadedServer/app/src/main/java/ro/pub/cs/systems/eim/lab06/singlethreadedserver/network/ServerThread.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/SingleThreadedServer/app/src/main/java/ro/pub/cs/systems/eim/lab06/singlethreadedserver/views/SingleThreadedServerActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/SingleThreadedServer/app/src/main/res/layout/activity_single_threaded_server.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/SingleThreadedServer/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/SingleThreadedServer/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/SingleThreadedServer/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/SingleThreadedServer/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/SingleThreadedServer/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/SingleThreadedServer/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/SingleThreadedServer/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/SingleThreadedServer/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/SingleThreadedServer/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/SingleThreadedServer/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/SingleThreadedServer/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/SingleThreadedServer/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/SingleThreadedServer/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/SingleThreadedServer/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/SingleThreadedServer/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/SingleThreadedServer/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/SingleThreadedServer/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/SingleThreadedServer/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/SingleThreadedServer/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../solutions-kotlin/SingleThreadedServer/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/AndroidProjectSystem.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copilot.data.migration.agent.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/migrations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientServerCommunication.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ro/pub/cs/systems/eim/lab06/clientservercommunication/general/Constants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ro/pub/cs/systems/eim/lab06/clientservercommunication/general/Utilities.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ro/pub/cs/systems/eim/lab06/clientservercommunication/network/ClientAsyncTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ro/pub/cs/systems/eim/lab06/clientservercommunication/network/CommunicationThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ro/pub/cs/systems/eim/lab06/clientservercommunication/network/ServerThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ro/pub/cs/systems/eim/lab06/clientservercommunication/views/ClientFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ro/pub/cs/systems/eim/lab06/clientservercommunication/views/ClientServerCommunicationActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ro/pub/cs/systems/eim/lab06/clientservercommunication/views/ServerFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/frame_border.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_client_server_communication.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_client.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_server.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FTPServerWelcomeMessage/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FTPServerWelcomeMessage/FTPServerWelcomeMessage.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FTPServerWelcomeMessage/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FTPServerWelcomeMessage/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FTPServerWelcomeMessage/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FTPServerWelcomeMessage/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FTPServerWelcomeMessage/app/src/main/java/ro/pub/cs/systems/eim/lab06/ftpserverwelcomemessage/general/Constants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FTPServerWelcomeMessage/app/src/main/java/ro/pub/cs/systems/eim/lab06/ftpserverwelcomemessage/general/Utilities.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FTPServerWelcomeMessage/app/src/main/java/ro/pub/cs/systems/eim/lab06/ftpserverwelcomemessage/network/FTPServerCommunicationAsyncTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FTPServerWelcomeMessage/app/src/main/java/ro/pub/cs/systems/eim/lab06/ftpserverwelcomemessage/views/FTPServerWelcomeMessageActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FTPServerWelcomeMessage/app/src/main/res/layout/activity_ftpserver_welcome_message.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FTPServerWelcomeMessage/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FTPServerWelcomeMessage/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FTPServerWelcomeMessage/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FTPServerWelcomeMessage/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FTPServerWelcomeMessage/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FTPServerWelcomeMessage/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FTPServerWelcomeMessage/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FTPServerWelcomeMessage/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FTPServerWelcomeMessage/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FTPServerWelcomeMessage/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FTPServerWelcomeMessage/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FTPServerWelcomeMessage/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FTPServerWelcomeMessage/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FTPServerWelcomeMessage/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FTPServerWelcomeMessage/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FTPServerWelcomeMessage/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FTPServerWelcomeMessage/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FTPServerWelcomeMessage/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FTPServerWelcomeMessage/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FTPServerWelcomeMessage/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MultipleThreadedServer/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MultipleThreadedServer/MultipleThreadedServer.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MultipleThreadedServer/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MultipleThreadedServer/app/app.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MultipleThreadedServer/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MultipleThreadedServer/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MultipleThreadedServer/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MultipleThreadedServer/app/src/main/java/ro/pub/cs/systems/eim/lab06/multiplethreadedserver/general/Constants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MultipleThreadedServer/app/src/main/java/ro/pub/cs/systems/eim/lab06/multiplethreadedserver/general/Utilities.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MultipleThreadedServer/app/src/main/java/ro/pub/cs/systems/eim/lab06/multiplethreadedserver/network/CommunicationThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MultipleThreadedServer/app/src/main/java/ro/pub/cs/systems/eim/lab06/multiplethreadedserver/network/ServerThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MultipleThreadedServer/app/src/main/java/ro/pub/cs/systems/eim/lab06/multiplethreadedserver/views/MultipleThreadedServerActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MultipleThreadedServer/app/src/main/res/layout/activity_multiple_threaded_server.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MultipleThreadedServer/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MultipleThreadedServer/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MultipleThreadedServer/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MultipleThreadedServer/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MultipleThreadedServer/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MultipleThreadedServer/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MultipleThreadedServer/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MultipleThreadedServer/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MultipleThreadedServer/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MultipleThreadedServer/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MultipleThreadedServer/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MultipleThreadedServer/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MultipleThreadedServer/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MultipleThreadedServer/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MultipleThreadedServer/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MultipleThreadedServer/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MultipleThreadedServer/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MultipleThreadedServer/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MultipleThreadedServer/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MultipleThreadedServer/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PheasantGame/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PheasantGame/PheasantGame.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PheasantGame/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PheasantGame/app/app.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PheasantGame/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PheasantGame/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PheasantGame/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PheasantGame/app/src/main/java/ro/pub/cs/systems/eim/lab06/pheasantgame/general/Constants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PheasantGame/app/src/main/java/ro/pub/cs/systems/eim/lab06/pheasantgame/general/Utilities.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PheasantGame/app/src/main/java/ro/pub/cs/systems/eim/lab06/pheasantgame/network/ClientCommunicationThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PheasantGame/app/src/main/java/ro/pub/cs/systems/eim/lab06/pheasantgame/network/ServerCommunicationThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PheasantGame/app/src/main/java/ro/pub/cs/systems/eim/lab06/pheasantgame/network/ServerThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PheasantGame/app/src/main/java/ro/pub/cs/systems/eim/lab06/pheasantgame/network/WordFinderService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PheasantGame/app/src/main/java/ro/pub/cs/systems/eim/lab06/pheasantgame/view/ClientFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PheasantGame/app/src/main/java/ro/pub/cs/systems/eim/lab06/pheasantgame/view/PheasantGameActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PheasantGame/app/src/main/java/ro/pub/cs/systems/eim/lab06/pheasantgame/view/ServerFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PheasantGame/app/src/main/res/drawable/frame_border.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PheasantGame/app/src/main/res/layout/activity_pheasant_game.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PheasantGame/app/src/main/res/layout/fragment_client.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PheasantGame/app/src/main/res/layout/fragment_server.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PheasantGame/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PheasantGame/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PheasantGame/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PheasantGame/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PheasantGame/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PheasantGame/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PheasantGame/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PheasantGame/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PheasantGame/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PheasantGame/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PheasantGame/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PheasantGame/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PheasantGame/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PheasantGame/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PheasantGame/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PheasantGame/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PheasantGame/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PheasantGame/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PheasantGame/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PheasantGame/httpclient-4.4.1.2/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PheasantGame/httpclient-4.4.1.2/httpclient-4.4.1.2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PheasantGame/httpclient-4.4.1.2/httpclient-4.4.1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PheasantGame/jsoup-1.10.2/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PheasantGame/jsoup-1.10.2/jsoup-1.10.2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PheasantGame/jsoup-1.10.2/jsoup-1.10.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PheasantGame/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SingleThreadedServer/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SingleThreadedServer/SingleThreadedServer.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SingleThreadedServer/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SingleThreadedServer/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SingleThreadedServer/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SingleThreadedServer/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SingleThreadedServer/app/src/main/java/ro/pub/cs/systems/eim/lab06/singlethreadedserver/general/Constants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SingleThreadedServer/app/src/main/java/ro/pub/cs/systems/eim/lab06/singlethreadedserver/general/Utilities.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SingleThreadedServer/app/src/main/java/ro/pub/cs/systems/eim/lab06/singlethreadedserver/network/ServerThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SingleThreadedServer/app/src/main/java/ro/pub/cs/systems/eim/lab06/singlethreadedserver/views/SingleThreadedServerActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SingleThreadedServer/app/src/main/res/layout/activity_single_threaded_server.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SingleThreadedServer/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SingleThreadedServer/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SingleThreadedServer/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SingleThreadedServer/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SingleThreadedServer/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SingleThreadedServer/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SingleThreadedServer/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SingleThreadedServer/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SingleThreadedServer/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SingleThreadedServer/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SingleThreadedServer/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SingleThreadedServer/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SingleThreadedServer/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SingleThreadedServer/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SingleThreadedServer/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SingleThreadedServer/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SingleThreadedServer/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SingleThreadedServer/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SingleThreadedServer/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SingleThreadedServer/settings.gradle" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=/Users/nicolaenitu/.android/avd/Pixel_9_Pro_API_35.avd)]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "nicolae1099"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/eim-lab/Laborator06.git",
+    "accountId": "3685f342-c7f0-4612-8a08-77f575b679e4"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="35OZZg40Z8q8ZtBcwnH5F5ggdrn" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Android App.app.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/nicolaenitu/AndroidStudioProjects/Laborator06/solutions/ClientServerCommunication",
+    "show.migrate.to.gradle.popup": "false"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="ClientServerCommunication.app" />
+      <option name="ANDROID_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="ALLOW_ASSUME_VERIFIED" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="RESTORE_ENABLED" value="false" />
+      <option name="RESTORE_FILE" value="" />
+      <option name="RESTORE_FRESH_INSTALL_ONLY" value="false" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Hybrid>
+      <Java>
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Java>
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7b57307f-6671-4da6-bad2-155efa22d3f1" name="Changes" comment="" />
+      <created>1762983136137</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1762983136137</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+  <component name="play_dynamic_filters_status">
+    <option name="appIdToCheckInfo">
+      <map>
+        <entry key="ro.pub.cs.systems.eim.lab06.clientservercommunication">
+          <value>
+            <CheckInfo lastCheckTimestamp="1762983625304" />
+          </value>
+        </entry>
+        <entry key="ro.pub.cs.systems.eim.lab06.clientservercommunication.test">
+          <value>
+            <CheckInfo lastCheckTimestamp="1762983625304" />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
