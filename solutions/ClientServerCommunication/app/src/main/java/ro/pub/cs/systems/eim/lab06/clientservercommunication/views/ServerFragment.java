@@ -1,7 +1,9 @@
 package ro.pub.cs.systems.eim.lab06.clientservercommunication.views;
 
 import android.os.Bundle;
-import android.app.Fragment;
+
+import androidx.fragment.app.Fragment;
+
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
@@ -20,16 +22,18 @@ public class ServerFragment extends Fragment {
 
     private ServerThread serverThread;
 
-    private ServerTextContentWatcher serverTextContentWatcher = new ServerTextContentWatcher();
+    private final ServerTextContentWatcher serverTextContentWatcher = new ServerTextContentWatcher();
+
     private class ServerTextContentWatcher implements TextWatcher {
 
         @Override
-        public void beforeTextChanged(CharSequence charSequence, int start, int count, int after) {}
+        public void beforeTextChanged(CharSequence charSequence, int start, int count, int after) {
+        }
 
         @Override
         public void onTextChanged(CharSequence charSequence, int start, int before, int count) {
             Log.v(Constants.TAG, "Text changed in edit text: " + charSequence.toString());
-            if (Constants.SERVER_START.toString().equals(charSequence.toString())) {
+            if (Constants.SERVER_START.equals(charSequence.toString())) {
                 serverThread = new ServerThread(serverEditText);
                 serverThread.startServer();
                 Log.v(Constants.TAG, "Starting server...");
@@ -41,21 +45,17 @@ public class ServerFragment extends Fragment {
         }
 
         @Override
-        public void afterTextChanged(Editable editable) {}
+        public void afterTextChanged(Editable editable) {
+        }
 
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup parent, Bundle state) {
-        return inflater.inflate(R.layout.fragment_server, parent, false);
-    }
-
-    @Override
-    public void onActivityCreated(Bundle state) {
-        super.onActivityCreated(state);
-
-        serverEditText = (EditText)getActivity().findViewById(R.id.server_text_edit_text);
+        View view = inflater.inflate(R.layout.fragment_server, parent, false);
+        serverEditText = view.findViewById(R.id.server_text_edit_text);
         serverEditText.addTextChangedListener(serverTextContentWatcher);
+        return view;
     }
 
     @Override

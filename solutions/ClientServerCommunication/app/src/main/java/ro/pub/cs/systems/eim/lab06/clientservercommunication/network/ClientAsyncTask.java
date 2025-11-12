@@ -1,63 +1,61 @@
 package ro.pub.cs.systems.eim.lab06.clientservercommunication.network;
 
-import android.os.AsyncTask;
+import android.os.Handler;
+import android.os.Looper;
 import android.util.Log;
 import android.widget.TextView;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.net.Socket;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 import ro.pub.cs.systems.eim.lab06.clientservercommunication.general.Constants;
 import ro.pub.cs.systems.eim.lab06.clientservercommunication.general.Utilities;
 
-public class ClientAsyncTask extends AsyncTask<String, String, Void> {
+public class ClientAsyncTask {
 
-    private TextView serverMessageTextView;
+    private final TextView serverMessageTextView;
+    private final ExecutorService executorService;
+    private final Handler mainHandler;
 
     public ClientAsyncTask(TextView serverMessageTextView) {
         this.serverMessageTextView = serverMessageTextView;
+        this.executorService = Executors.newSingleThreadExecutor();
+        this.mainHandler = new Handler(Looper.getMainLooper());
     }
 
-    @Override
-    protected Void doInBackground(String... params) {
-        Socket socket = null;
-        try {
-            String serverAddress = params[0];
-            int serverPort = Integer.parseInt(params[1]);
-            socket = new Socket(serverAddress, serverPort);
-            Log.v(Constants.TAG, "Connection opened with " + socket.getInetAddress() + ":" + socket.getLocalPort());
-            BufferedReader bufferedReader = Utilities.getReader(socket);
-            String currentLine;
-            while ((currentLine = bufferedReader.readLine()) != null) {
-                publishProgress(currentLine);
-            }
-        } catch (IOException ioException) {
-            Log.e(Constants.TAG, "An exception has occurred: " + ioException.getMessage());
-        } finally {
+    public void execute(String serverAddress, String serverPort) {
+        // Clear text view on UI thread
+        mainHandler.post(() -> serverMessageTextView.setText(""));
+
+        // Execute network operation on background thread
+        executorService.execute(() -> {
+            Socket socket = null;
             try {
-                if (socket != null) {
-                    socket.close();
+                int port = Integer.parseInt(serverPort);
+                socket = new Socket(serverAddress, port);
+                Log.v(Constants.TAG, "Connection opened with " + socket.getInetAddress() + ":" + socket.getLocalPort());
+                BufferedReader bufferedReader = Utilities.getReader(socket);
+                String currentLine;
+                while ((currentLine = bufferedReader.readLine()) != null) {
+                    String line = currentLine;
+                    // Update UI on main thread
+                    mainHandler.post(() -> serverMessageTextView.append(line + "\n"));
                 }
-                Log.v(Constants.TAG, "Connection closed");
             } catch (IOException ioException) {
                 Log.e(Constants.TAG, "An exception has occurred: " + ioException.getMessage());
+            } finally {
+                try {
+                    if (socket != null) {
+                        socket.close();
+                    }
+                    Log.v(Constants.TAG, "Connection closed");
+                } catch (IOException ioException) {
+                    Log.e(Constants.TAG, "An exception has occurred: " + ioException.getMessage());
+                }
             }
-        }
-        return null;
+        });
     }
-
-    @Override
-    protected void onPreExecute() {
-        serverMessageTextView.setText("");
-    }
-
-    @Override
-    protected void onProgressUpdate(String... progress) {
-        serverMessageTextView.append(progress[0] + "\n");
-    }
-
-    @Override
-    protected void onPostExecute(Void result) {}
-
 }

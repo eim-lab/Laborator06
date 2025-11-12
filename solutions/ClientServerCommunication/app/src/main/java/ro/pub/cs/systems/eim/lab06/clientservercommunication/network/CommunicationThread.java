@@ -23,7 +23,7 @@ public class CommunicationThread extends Thread {
     @Override
     public void run() {
         try {
-            Log.v(Constants.TAG, "Connection opened to " + socket.getLocalAddress() + ":" + socket.getLocalPort()+ " from " + socket.getInetAddress());
+            Log.v(Constants.TAG, "Connection opened to " + socket.getLocalAddress() + ":" + socket.getLocalPort() + " from " + socket.getInetAddress());
             PrintWriter printWriter = Utilities.getWriter(socket);
             printWriter.println(serverTextEditText.getText().toString());
             socket.close();
