@@ -1,7 +1,9 @@
 package ro.pub.cs.systems.eim.lab06.clientservercommunication.views;
 
 import android.os.Bundle;
-import android.app.Fragment;
+
+import androidx.fragment.app.Fragment;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,32 +18,20 @@ public class ClientFragment extends Fragment {
 
     private EditText serverAddressEditText, serverPortEditText;
     private TextView serverMessageTextView;
-    private Button displayMessageButton;
-
-    private ButtonClickListener buttonClickListener = new ButtonClickListener();
-    private class ButtonClickListener implements View.OnClickListener {
-
-        @Override
-        public void onClick(View view) {
-            ClientAsyncTask clientAsyncTask = new ClientAsyncTask(serverMessageTextView);
-            clientAsyncTask.execute(serverAddressEditText.getText().toString(), serverPortEditText.getText().toString());
-        }
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup parent, Bundle state) {
-        return inflater.inflate(R.layout.fragment_client, parent, false);
-    }
+        View view = inflater.inflate(R.layout.fragment_client, parent, false);
+        serverAddressEditText = view.findViewById(R.id.server_address_edit_text);
+        serverPortEditText = view.findViewById(R.id.server_port_edit_text);
+        serverMessageTextView = view.findViewById(R.id.server_message_text_view);
+        Button displayMessageButton = view.findViewById(R.id.display_message_button);
 
-    @Override
-    public void onActivityCreated(Bundle state) {
-        super.onActivityCreated(state);
-
-        serverAddressEditText = (EditText)getActivity().findViewById(R.id.server_address_edit_text);
-        serverPortEditText = (EditText)getActivity().findViewById(R.id.server_port_edit_text);
-        displayMessageButton = (Button)getActivity().findViewById(R.id.display_message_button);
-        displayMessageButton.setOnClickListener(buttonClickListener);
-        serverMessageTextView = (TextView)getActivity().findViewById(R.id.server_message_text_view);
+        displayMessageButton.setOnClickListener(view1 -> {
+            ClientAsyncTask clientAsyncTask = new ClientAsyncTask(serverMessageTextView);
+            clientAsyncTask.execute(serverAddressEditText.getText().toString(), serverPortEditText.getText().toString());
+        });
+        return view;
     }
 
 }
