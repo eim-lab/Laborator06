@@ -1,6 +1,6 @@
 package ro.pub.cs.systems.eim.lab06.clientservercommunication.views
 
-import android.app.Fragment
+import androidx.fragment.app.Fragment
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -23,27 +23,19 @@ class ClientFragment : Fragment() {
         override fun onClick(view: View?) {
             val clientAsyncTask = ClientAsyncTask(serverMessageTextView!!)
             clientAsyncTask.execute(
-                serverAddressEditText!!.getText().toString(),
-                serverPortEditText!!.getText().toString()
+                serverAddressEditText!!.text.toString(),
+                serverPortEditText!!.text.toString()
             )
         }
     }
 
     override fun onCreateView(inflater: LayoutInflater, parent: ViewGroup?, state: Bundle?): View? {
-        return inflater.inflate(R.layout.fragment_client, parent, false)
-    }
-
-    override fun onActivityCreated(state: Bundle?) {
-        super.onActivityCreated(state)
-
-        serverAddressEditText =
-            getActivity().findViewById<View?>(R.id.server_address_edit_text) as EditText
-        serverPortEditText =
-            getActivity().findViewById<View?>(R.id.server_port_edit_text) as EditText
-        displayMessageButton =
-            getActivity().findViewById<View?>(R.id.display_message_button) as Button
+        val view = inflater.inflate(R.layout.fragment_client, parent, false)
+        serverAddressEditText = view.findViewById(R.id.server_address_edit_text)
+        serverPortEditText = view.findViewById(R.id.server_port_edit_text)
+        displayMessageButton = view.findViewById(R.id.display_message_button)
         displayMessageButton!!.setOnClickListener(buttonClickListener)
-        serverMessageTextView =
-            getActivity().findViewById<View?>(R.id.server_message_text_view) as TextView
+        serverMessageTextView = view.findViewById(R.id.server_message_text_view)
+        return view
     }
 }

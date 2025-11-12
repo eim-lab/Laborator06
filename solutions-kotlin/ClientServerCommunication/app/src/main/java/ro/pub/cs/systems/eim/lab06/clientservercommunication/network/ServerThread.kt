@@ -30,10 +30,10 @@ class ServerThread(private val serverTextEditText: EditText) : Thread() {
 
     override fun run() {
         try {
-            serverSocket = ServerSocket(Constants.SERVER_PORT, 50, InetAddress.getByName("0.0.0.0"))
+            serverSocket = ServerSocket(Constants.SERVER_PORT, 50, InetAddress.getByName(Constants.SERVER_HOST))
             while (isRunning) {
                 val socket = serverSocket!!.accept()
-                Log.v(Constants.TAG, "accept()-ed: " + socket.getInetAddress())
+                Log.v(Constants.TAG, "accept()-ed: " + socket.inetAddress)
                 val communicationThread = CommunicationThread(socket, serverTextEditText)
                 communicationThread.start()
             }

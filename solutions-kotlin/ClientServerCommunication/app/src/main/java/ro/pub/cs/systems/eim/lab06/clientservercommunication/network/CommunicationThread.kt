@@ -13,10 +13,10 @@ class CommunicationThread(private val socket: Socket, private val serverTextEdit
         try {
             Log.v(
                 Constants.TAG,
-                "Connection opened to " + socket.getLocalAddress() + ":" + socket.getLocalPort() + " from " + socket.getInetAddress()
+                "Connection opened to " + socket.localAddress + ":" + socket.localPort + " from " + socket.inetAddress
             )
             val printWriter = getWriter(socket)
-            printWriter.println(serverTextEditText.getText().toString())
+            printWriter.println(serverTextEditText.text.toString())
             socket.close()
             Log.v(Constants.TAG, "Connection closed")
         } catch (ioException: IOException) {

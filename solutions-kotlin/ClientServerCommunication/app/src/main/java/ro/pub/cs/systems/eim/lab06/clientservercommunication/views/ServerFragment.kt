@@ -1,6 +1,6 @@
 package ro.pub.cs.systems.eim.lab06.clientservercommunication.views
 
-import android.app.Fragment
+import androidx.fragment.app.Fragment
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -36,7 +36,7 @@ class ServerFragment : Fragment() {
             count: Int
         ) {
             Log.v(Constants.TAG, "Text changed in edit text: " + charSequence.toString())
-            if (Constants.SERVER_START.toString() == charSequence.toString()) {
+            if (Constants.SERVER_START == charSequence.toString()) {
                 serverThread = ServerThread(serverEditText!!)
                 serverThread!!.startServer()
                 Log.v(Constants.TAG, "Starting server...")
@@ -51,14 +51,10 @@ class ServerFragment : Fragment() {
     }
 
     override fun onCreateView(inflater: LayoutInflater, parent: ViewGroup?, state: Bundle?): View? {
-        return inflater.inflate(R.layout.fragment_server, parent, false)
-    }
-
-    override fun onActivityCreated(state: Bundle?) {
-        super.onActivityCreated(state)
-
-        serverEditText = getActivity().findViewById<View?>(R.id.server_text_edit_text) as EditText
+        val view = inflater.inflate(R.layout.fragment_server, parent, false)
+        serverEditText = view.findViewById(R.id.server_text_edit_text)
         serverEditText!!.addTextChangedListener(serverTextContentWatcher)
+        return view
     }
 
     override fun onDestroy() {
