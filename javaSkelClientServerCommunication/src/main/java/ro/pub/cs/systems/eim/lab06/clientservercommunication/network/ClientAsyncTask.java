@@ -1,53 +1,71 @@
 package ro.pub.cs.systems.eim.lab06.clientservercommunication.network;
 
-import android.os.AsyncTask;
+import android.os.Handler;
+import android.os.Looper;
 import android.util.Log;
 import android.widget.TextView;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.net.Socket;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
 import ro.pub.cs.systems.eim.lab06.clientservercommunication.general.Constants;
+import ro.pub.cs.systems.eim.lab06.clientservercommunication.general.Utilities;
 
-public class ClientAsyncTask extends AsyncTask<String, String, Void> {
+public class ClientAsyncTask {
 
-    private TextView serverMessageTextView;
+    private final TextView serverMessageTextView;
+    // TODO exercise 6b
+    // - declare an ExecutorService field named executorService
+    private ExecutorService executorService;
+    // - declare a Handler field named mainHandler
+    private Handler mainHandler;
 
     public ClientAsyncTask(TextView serverMessageTextView) {
         this.serverMessageTextView = serverMessageTextView;
-    }
-
-    @Override
-    protected Void doInBackground(String... params) {
-        try {
-
-            // TODO exercise 6b
-            // - get the connection parameters (serverAddress and serverPort from parameters - on positions 0 and 1)
-            // - open a socket to the server
-            // - get the BufferedReader in order to read from the socket (use Utilities.getReader())
-            // - while the line that has read is not null (EOF was not sent), append the content to serverMessageTextView
-            // by publishing the progress - with the publishProgress(...) method - to the UI thread
-            // - close the socket to the server
-
-        } catch (Exception exception) {
-            Log.e(Constants.TAG, "An exception has occurred: " + exception.getMessage());
-            if (Constants.DEBUG) {
-                exception.printStackTrace();
-            }
-        }
-        return null;
-    }
-
-    @Override
-    protected void onPreExecute() {
         // TODO exercise 6b
-        // - reset the content of the serverMessageTextView
+        // - initialize executorService with Executors.newSingleThreadExecutor()
+        // executorService = ...
+        // - initialize mainHandler with new Handler(Looper.getMainLooper())
+        // mainHandler = ...
     }
 
-    @Override
-    protected void onProgressUpdate(String... progress) {
+    public void execute(String serverAddress, String serverPort) {
         // TODO exercise 6b
-        // - append the content to serverMessageTextView
+        // - clear the content of serverMessageTextView on the UI thread
+        //   using mainHandler.post() with a lambda that calls setText("")
+        // Example: mainHandler.post(() -> serverMessageTextView.setText(""));
+
+        // TODO exercise 6b
+        // - execute the network operation on a background thread using executorService.execute()
+        //   Inside the lambda:
+        //   - declare a Socket variable initialized to null
+        //   - in a try block:
+        //     * parse serverPort to int using Integer.parseInt()
+        //     * create a new Socket with serverAddress and port
+        //     * log the connection opened (use Constants.TAG and Log.v)
+        //     * get a BufferedReader using Utilities.getReader(socket)
+        //     * while the line read is not null:
+        //       - capture the current line in a final variable (String line = currentLine)
+        //       - post to mainHandler to append the line + "\n" to serverMessageTextView
+        //   - in a catch block for IOException:
+        //     * log the exception (use Constants.TAG and Log.e)
+        //   - in a finally block:
+        //     * try to close the socket if it's not null
+        //     * log "Connection closed" (use Constants.TAG and Log.v)
+        //     * catch IOException and log it
+        // Example structure:
+        // executorService.execute(() -> {
+        //     Socket socket = null;
+        //     try {
+        //         // TODO: implement socket connection and reading
+        //     } catch (IOException ioException) {
+        //         // TODO: handle exception
+        //     } finally {
+        //         // TODO: close socket
+        //     }
+        // });
     }
-
-    @Override
-    protected void onPostExecute(Void result) {}
-
 }
