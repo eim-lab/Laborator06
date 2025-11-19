@@ -1,25 +1,33 @@
-apply plugin: 'com.android.application'
+plugins {
+    id 'com.android.application'
+}
 
 android {
-    compileSdkVersion 27
-    buildToolsVersion "28.0.3"
+
+    compileSdk 34
+    namespace "ro.pub.cs.systems.eim.lab06.daytimeprotocol" // Required for modern AGP
+
     defaultConfig {
         applicationId "ro.pub.cs.systems.eim.lab06.daytimeprotocol"
-        minSdkVersion 24
-        targetSdkVersion 27
+        minSdkVersion 21 // Or your desired minimum
+        targetSdk 34     // Should match compileSdk
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.android.support:appcompat-v7:27.1.1'
+    // Replace old support libraries with AndroidX
+    implementation 'androidx.appcompat:appcompat:1.6.1'
 }
